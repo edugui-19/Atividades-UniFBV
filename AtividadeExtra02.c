@@ -1,3 +1,4 @@
+/*Um algoritmo que lê e armazena os pontos de partida e chegada, tempo de viagem e distância percorrida por um carro, além de imprimir a velocidade média*/
 #include <stdio.h>
 
 int main() {
