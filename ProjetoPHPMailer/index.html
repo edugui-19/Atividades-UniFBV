@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Informações de produto</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; padding: 24px; }
+    label { display:block; margin-top:12px; font-weight:600; }
+    input, textarea { width:100%; max-width:520px; padding:10px; margin-top:6px; }
+    button { margin-top:14px; padding:10px 16px; }
+    .ok { color: #137333; }
+    .err { color: #b3261e; }
+  </style>
+</head>
+<body>
+  <h1>Formulário de requisição</h1>
+
+  <form action="send.php" method="post" novalidate>
+    <label for="email">Seu endereço de email</label>
+    <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+    <label for="produto">ID do produto</label>
+    <input type="number" id="produto" name="produto" placeholder="ID do produto" required>
+
+    <div style="position:absolute; left:-9999px;">
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
